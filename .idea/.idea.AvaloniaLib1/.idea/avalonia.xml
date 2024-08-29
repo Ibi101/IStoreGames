@@ -4,7 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="App.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="Dashboard.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="Views/Dashboard.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Views/MainWindow.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="ZoomWindow..axaml" value="AvaloniaLib1.csproj" />
       </map>
     </option>
   </component>

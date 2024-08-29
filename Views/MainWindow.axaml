@@ -6,7 +6,11 @@
         x:Class="AvaloniaLib1.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="AvaloniaLib1" Height="550" Width="750">
+        Title="AvaloniaLib1" Height="550" Width="750"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        >
 
     
     
@@ -30,6 +34,19 @@
              
         </Grid.ColumnDefinitions>
          
+        <Button Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right" 
+                Background="Transparent"
+                Click="CloseButtonClick"
+                Margin="0,4,0,0">
+            <Image Source="../Assets/X.png" Width="25" />
+        </Button>
+        
+      
+        
+   
+        
+        
+        
         <Border Grid.Column="1" Height="500" Width="250"  CornerRadius="10" ClipToBounds="True">
             <Panel  Background="White"  >
                 <Label Content="Welcome back" Foreground="Purple" FontWeight="Medium" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center"/>
@@ -40,15 +57,15 @@
                         Margin="135,-15,0,0"
                         Background="Transparent"/>
                 
-                <Image Source="../Assets/user.png"  Height=" 20" Margin="0,-200,175,0" ZIndex="0" />
-                <Image Source="../Assets/Password.png" Height="20" Margin="0,-75,175,0" ZIndex="0"/>
+                <Image Source="../Assets/user.png"  Height=" 20" Margin="0,-200,225,0" ZIndex="0" />
+                <Image Source="../Assets/Password.png" Height="20" Margin="0,-75,225,0" ZIndex="0"/>
                 
                 
                 <TextBox Name="LogInTextBox"
                          Height="25" Width="200" Margin="0,0,0,200" />
                 <TextBox Name ="PassowordTextBox"
                          Height="25" Width="200" Margin="0,0,0,75"/>
-                <Button Name="LogInButton" 
+                <Button Name="LogInButton" Click="LogInButton_OnClick"
                         Height="29" Width="200" HorizontalAlignment="Center" Margin="0,0,0,-50" Background="Fuchsia"  CornerRadius="15"
                 >
                     <Label Content="LOGIN" 

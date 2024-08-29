@@ -1,0 +1,115 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaLib1.Dashboard"
+        Title="Dashboard"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        
+        <Button Name="CloseButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Background="Transparent"
+                Margin="0,4,0,0"
+                Click="CloseButtonClick">
+            <Image Source="../Assets/X.png" Width="25"/>
+        </Button>
+        
+        <Button Name="MinimiseButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0,4,75,0"
+                Background="Transparent"
+                Click="MinimiseButton_OnClick">
+             
+            <Image Source="../Assets/window-minimize.png" Width="25"/>
+        </Button>
+        
+        <Button Name="ExpandButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
+                Margin="0,4,35,0"
+                Background="Transparent"
+                Click="ExpandButton_OnClick">
+                
+             
+            <Image Source="../Assets/Expand.png" Width="25"/>
+        </Button>
+        
+        
+         
+        <Label Grid.Row="0" Content="League Screenshots"
+               VerticalAlignment="Bottom" HorizontalAlignment="Center"
+               FontSize="18" FontWeight="Bold" Foreground="White"/>
+        
+        <Label Content="Path of Exile Screenshots"
+               VerticalAlignment="Bottom" HorizontalAlignment="Center"
+               FontSize="18" FontWeight="Bold" Foreground="White"
+            Grid.Row="0" Grid.Column="1"/>
+        
+        <Label Content="Roblox Screenshots"
+               VerticalAlignment="Bottom" HorizontalAlignment="Center"
+               FontSize="18" FontWeight="Bold" Foreground="White"
+               Grid.Row="0" Grid.Column="2"/>
+        
+        <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" 
+                      Width="250"
+                      Grid.Row="1"
+                      Grid.Column="0">
+            <StackPanel >
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 192642.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200719.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200950.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-26 172550.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 174315.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 191026.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 194821.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 214351.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-30 184939.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-05-07 232530.png" Width="200" Height="150" Margin="5"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
+                      Width="250"
+                      Grid.Row="1" Grid.Column="1">
+           <StackPanel>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-26 212839.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-27 212148.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 144343.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 152158.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 155345.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 155640.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 022615.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 184220.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 222605.png" Width="200" Height="150" Margin="5"/>
+               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-08-01 173317.png" Width="200" Height="150" Margin="5"/>
+
+           </StackPanel> 
+        </ScrollViewer>
+        
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
+                      Width="250"
+                      Grid.Row="1" Grid.Column="2">
+            <StackPanel>
+                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005743.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005748.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005753.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005814.png" Width="200" Height="150" Margin="5"/>
+                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005819.png" Width="200" Height="150" Margin="5"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+    
+
+</Window>
