@@ -25,7 +25,7 @@
                 Background="Transparent"
                 Margin="0,4,0,0"
                 Click="CloseButtonClick">
-            <Image Source="../Assets/X.png" Width="25"/>
+            <Image Source="../Assets/close logo black.png" Width="25"/>
         </Button>
         
         <Button Name="MinimiseButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
@@ -33,7 +33,7 @@
                 Background="Transparent"
                 Click="MinimiseButton_OnClick">
              
-            <Image Source="../Assets/window-minimize.png" Width="25"/>
+            <Image Source="../Assets/Minimise.png" Width="25"/>
         </Button>
         
         <Button Name="ExpandButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
@@ -42,7 +42,7 @@
                 Click="ExpandButton_OnClick">
                 
              
-            <Image Source="../Assets/Expand.png" Width="25"/>
+            <Image Source="../Assets/expand.png" Width="25"/>
         </Button>
         
         
@@ -66,7 +66,9 @@
                       Grid.Row="1"
                       Grid.Column="0">
             <StackPanel >
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 192642.png" Width="200" Height="150" Margin="5"/>
+                <Button Background="Transparent" Click="League1" >
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League1.png" Width="200" Height="150" Margin="5"/>
+                </Button>
                 <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200719.png" Width="200" Height="150" Margin="5"/>
                 <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200950.png" Width="200" Height="150" Margin="5"/>
                 <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-26 172550.png" Width="200" Height="150" Margin="5"/>

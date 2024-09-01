@@ -5,6 +5,9 @@
       <map>
         <entry key="App.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Dashboard.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="ImageClickedWindows/League image.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="ImageClickedWindows/LeagueImage1.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="ImageDisplayWindow.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Views/Dashboard.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Views/MainWindow.axaml" value="AvaloniaLib1.csproj" />
         <entry key="ZoomWindow..axaml" value="AvaloniaLib1.csproj" />

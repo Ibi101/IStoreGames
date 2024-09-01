@@ -14,6 +14,13 @@
     </ItemGroup>
 
     <ItemGroup>
+        <!-- Ensure assets are copied to the output directory -->
+        <None Update="Assets\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Avalonia" Version="11.1.0"/>
         <PackageReference Include="Avalonia.Desktop" Version="11.1.0"/>
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.0"/>
@@ -25,9 +32,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Views\Dashboard.axaml.cs">
-        <DependentUpon>Dashboard.axaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
+        <Compile Update="Views\Dashboard.axaml.cs">
+            <DependentUpon>Dashboard.axaml</DependentUpon>
+            <SubType>Code</SubType>
+        </Compile>
     </ItemGroup>
 </Project>

@@ -38,7 +38,7 @@
                 Background="Transparent"
                 Click="CloseButtonClick"
                 Margin="0,4,0,0">
-            <Image Source="../Assets/X.png" Width="25" />
+            <Image Source="../Assets/close logo white.png" Width="15" />
         </Button>
         
       
