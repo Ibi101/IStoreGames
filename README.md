@@ -39,7 +39,7 @@ Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently 
 <img src="https://github.com/user-attachments/assets/e40c27d1-7f37-4ac0-801a-43834944c221" width="100" alt="Avalonia">
 
 ### .NET8.0
-<img src="https://github.com/user-attachments/assets/45151c3c-6841-4eb1-b595-4a781c55adaf" width="100" alt="Avalonia">
+<img src="https://github.com/user-attachments/assets/45151c3c-6841-4eb1-b595-4a781c55adaf" width="175" alt="Avalonia">
 
 
 
