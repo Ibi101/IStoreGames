@@ -27,18 +27,15 @@ Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently 
 
 ### C#
 
-![image](https://github.com/user-attachments/assets/ac10fe97-66ed-41be-88db-0a9203d7b4b3)
-
+<img src="https://github.com/user-attachments/assets/ac10fe97-66ed-41be-88db-0a9203d7b4b3" width="100" alt="C#">
 
 ### Axaml
 
-![image](https://github.com/user-attachments/assets/38790951-f015-4d56-b147-db934b3e6d99)
-
+<img src="https://github.com/user-attachments/assets/38790951-f015-4d56-b147-db934b3e6d99" width="100" alt="Axaml">
 
 ### Avalonia
 
-![image](https://github.com/user-attachments/assets/e40c27d1-7f37-4ac0-801a-43834944c221)
-
+<img src="https://github.com/user-attachments/assets/e40c27d1-7f37-4ac0-801a-43834944c221" width="100" alt="Avalonia">
 
 
 
