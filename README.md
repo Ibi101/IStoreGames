@@ -7,7 +7,7 @@ A photo storing app developed using the avalonia framework, using axaml as the f
 I made this app because i was tired of losing my screenshots in games, so i decided to make something that would categorize my games in sections that i can easily check!
 Currently a work in progress, i have a ton of ambitions for this app and alot more features to introduce!
 
-An in-depth paragraph about your project and overview of use.
+
 
 ## Getting Started
 getting started you will be greeted with a basic login page. i plan to make a database for each user to store their photos, but for now its just in files within the code-sapce so the login feature really isnt necessary.
