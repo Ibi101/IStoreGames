@@ -1,5 +1,5 @@
 
-  # IStoreGames
+  # 🖼️ IStoreGames
 
 
 
@@ -11,14 +11,14 @@ Currently a work in progress, i have a ton of ambitions for this app and alot mo
 
 
 
-## Getting Started
+##  🔐 Getting Started
 getting started you will be greeted with a basic login page. i plan to make a database for each user to store their photos, but for now its just in files within the code-sapce so the login feature really isnt necessary.
 ![image](https://github.com/user-attachments/assets/e8639b08-12e8-4ba4-884a-da801086ba9b)
 
 I plan to add Forogtten password and sign up options to and maybe a little animation on the page.   
 
 
-### The app
+### 🎮 The app
 Once in the app youll get straight to the main use of it. finding your game screenshots. as you can see its quite basic right now, but as i work on it ill be adding multiple pages, and options for you to add your own games.
 currently i play league roblox and poe so ive chosen screenshots from these 3 games.
 ![image](https://github.com/user-attachments/assets/0f7e47a0-dce4-4b4d-a3c0-27121d36a910)
