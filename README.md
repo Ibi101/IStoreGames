@@ -2,9 +2,9 @@
   ## IStoreGames
 
 
-Simple overview of use/purpose.
 
-## 
+
+
 A photo storing app developed using the avalonia framework, using axaml as the front end and c# as the back end.
 I made this app because i was tired of losing my screenshots in games, so i decided to make something that would categorize my games in sections that i can easily check!
 Currently a work in progress, i have a ton of ambitions for this app and alot more features to introduce!
