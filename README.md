@@ -1,4 +1,4 @@
-# GameSnap Vault
+# IStoreGames
 
 Simple overview of use/purpose.
 
