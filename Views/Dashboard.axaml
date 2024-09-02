@@ -66,18 +66,45 @@
                       Grid.Row="1"
                       Grid.Column="0">
             <StackPanel >
-                <Button Background="Transparent" Click="League1" >
+                <Button Background="Transparent" Tag="League1" Click="LeagueButtonClick" >
                     <Image Source="avares://AvaloniaLib1/Assets/League/League1.png" Width="200" Height="150" Margin="5"/>
                 </Button>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200719.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-25 200950.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-26 172550.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 174315.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 191026.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 194821.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-28 214351.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-04-30 184939.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="avares://AvaloniaLib1/Assets/League/Screenshot 2024-05-07 232530.png" Width="200" Height="150" Margin="5"/>
+                
+                <Button Background="Transparent" Tag="League2" Click="LeagueButtonClick">
+                <Image Source="avares://AvaloniaLib1/Assets/League/League2.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button Background="Transparent" Tag="League3" Click="LeagueButtonClick">
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League3.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button Background="Transparent" Tag="League4" Click="LeagueButtonClick">
+                     <Image Source="avares://AvaloniaLib1/Assets/League/League4.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                <Button Background="Transparent" Tag="League5" Click="LeagueButtonClick">
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League5.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button Background="Transparent" Tag="League6" Click="LeagueButtonClick" >
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League6.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button Background="Transparent" Tag="League7" Click="LeagueButtonClick">
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League7.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button Background="Transparent" Tag="League8" Click="LeagueButtonClick">
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League8.png" Width="200" Height="150" Margin="5"/>
+
+                </Button>
+                
+                <Button Background="Transparent" Tag="League9" Click="LeagueButtonClick"> 
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League9.png" Width="200" Height="150" Margin="5"/>
+                </Button>
+                
+                <Button  Background="Transparent" Tag="League10" Click="LeagueButtonClick">
+                    <Image Source="avares://AvaloniaLib1/Assets/League/League10.png" Width="200" Height="150" Margin="5"/>
+                </Button>
             </StackPanel>
         </ScrollViewer>
         

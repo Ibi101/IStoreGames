@@ -1,21 +1,31 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Avalonia.Controls;
-using Avalonia.Interactivity;
-using Avalonia.Media.Imaging;
 using Avalonia.Media;
-using Avalonia.Controls.Shapes;
+using Avalonia.Media.Imaging;
+using System.Collections.Generic;
 
 namespace AvaloniaLib1
 {
     public partial class Dashboard : Window
     {
+        private  Dictionary<string, string> _leagueImages = new()
+        {
+            { "League1", "Assets/League/League1.png" },
+            { "League2", "Assets/League/League2.png" },
+            { "League3", "Assets/League/League3.png" },
+            { "League4", "Assets/League/League4.png" },
+            { "League5", "Assets/League/League5.png" },
+            { "League6", "Assets/League/League6.png" },
+            { "League7", "Assets/League/League7.png" },
+            { "League8", "Assets/League/League8.png" },
+            { "League9", "Assets/League/League9.png" },
+            {"League10","Assets/League/League10.png"}
+            
+        };
+
         public Dashboard()
         {
             InitializeComponent();
-          
-            
-
         }
 
         private void CloseButtonClick(object? sender, RoutedEventArgs e)
@@ -30,44 +40,21 @@ namespace AvaloniaLib1
 
         private void ExpandButton_OnClick(object? sender, RoutedEventArgs e)
         {
-            if (WindowState == WindowState.Normal)
-            {
-                this.WindowState = WindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = WindowState.Normal;
-            }
+            this.WindowState = this.WindowState == WindowState.Normal ? WindowState.Maximized : WindowState.Normal;
         }
 
-
-        private void League1(object? sender, RoutedEventArgs e)
+        private void OpenImageWindow(string imagePath)
         {
-            string imagePath = "Assets/League/League1.png";
+            var imageWindow = new ImageWindow(imagePath);
+            imageWindow.ShowDialog(this);
+        }
 
-            var image = new Image
+        private void LeagueButtonClick(object? sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is string leagueKey && _leagueImages.TryGetValue(leagueKey, out var imagePath))
             {
-                Width = 800,  // Set the desired width
-                Height = 450, // Set the desired height
-                Source = new Bitmap(imagePath),  // Use the relative path
-                Stretch = Avalonia.Media.Stretch.Uniform
-            };
-            var messageBox = new Window
-            {
-                Title = "Login Error",
-                Content = image, // Set the image as the content
-                Width = 800,
-                Height = 450,
-                Background = Brushes.Transparent,
-                WindowStartupLocation = WindowStartupLocation.CenterScreen,
-                
-            
-            };
-            messageBox.ExtendClientAreaToDecorationsHint = true;
-            messageBox.ExtendClientAreaTitleBarHeightHint = 0;
-         ;
-            messageBox.ShowDialog(this);
-            
+                OpenImageWindow(imagePath);
+            }
         }
     }
 }
