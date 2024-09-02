@@ -23,14 +23,27 @@ Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently 
 ![image](https://github.com/user-attachments/assets/224fb2e4-a736-49c9-bc6b-83b41d29e10e)
 
 
+## Languages and Technologies Used
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### C#
+
+![image](https://github.com/user-attachments/assets/ac10fe97-66ed-41be-88db-0a9203d7b4b3)
+
+
+### Axaml
+
+![image](https://github.com/user-attachments/assets/38790951-f015-4d56-b147-db934b3e6d99)
+
+
+### Avalonia
+
+![image](https://github.com/user-attachments/assets/e40c27d1-7f37-4ac0-801a-43834944c221)
 
 
 
 
-![C#](https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white)
+
+
 
 
 
