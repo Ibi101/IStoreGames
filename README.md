@@ -30,6 +30,7 @@ Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently 
 
 
 
+![C#](https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white)
 
 
 
