@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="/Assets/avalonia-logo.ico"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaLib1.Dashboard"
         Title="Dashboard"
@@ -65,7 +66,7 @@
                       Width="250"
                       Grid.Row="1"
                       Grid.Column="0">
-            <StackPanel >
+            <StackPanel>
                 <Button Background="Transparent" Tag="League1" Click="LeagueButtonClick" >
                     <Image Source="avares://AvaloniaLib1/Assets/League/League1.png" Width="200" Height="150" Margin="5"/>
                 </Button>
@@ -111,32 +112,63 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="1">
-           <StackPanel>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-26 212839.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-27 212148.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 144343.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 152158.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 155345.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-29 155640.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 022615.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 184220.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-07-30 222605.png" Width="200" Height="150" Margin="5"/>
-               <Image Source="avares://AvaloniaLib1/Assets/PathOfExile/Screenshot 2024-08-01 173317.png" Width="200" Height="150" Margin="5"/>
-
-           </StackPanel> 
+          <StackPanel>
+    <Button Background="Transparent" Tag="Poe1" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe1.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe2" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe2.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe3" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe3.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe4" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe4.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe5" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe5.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe6" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe6.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe7" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe7.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe8" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe8.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe9" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe9.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Poe10" Click="PoeButtononClick">
+        <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe10.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+</StackPanel>
         </ScrollViewer>
         
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="2">
-            <StackPanel>
-                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005743.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005748.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005753.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005814.png" Width="200" Height="150" Margin="5"/>
-                <Image Source="../Assets/Roblox/Screenshot 2024-08-26 005819.png" Width="200" Height="150" Margin="5"/>
-            </StackPanel>
+          <StackPanel>
+    <Button Background="Transparent" Tag="Roblox1" Click="RobloxButtonClick">
+        <Image Source="../Assets/Roblox/Roblox1.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Roblox2" Click="RobloxButtonClick">
+        <Image Source="../Assets/Roblox/Roblox2.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Roblox3" Click="RobloxButtonClick">
+        <Image Source="../Assets/Roblox/Roblox3.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Roblox4" Click="RobloxButtonClick">
+        <Image Source="../Assets/Roblox/Roblox4.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+    <Button Background="Transparent" Tag="Roblox5" Click="RobloxButtonClick">
+        <Image Source="../Assets/Roblox/Roblox5.png" Width="200" Height="150" Margin="5"/>
+    </Button>
+</StackPanel>
         </ScrollViewer>
+        
+     
         
     </Grid>
     

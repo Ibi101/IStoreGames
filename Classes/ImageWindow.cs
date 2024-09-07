@@ -7,6 +7,7 @@ using Avalonia.Media.Imaging;
 using Avalonia.Styling;
 using System;
 
+
 namespace AvaloniaLib1
 {
     public class ImageWindow : Window
