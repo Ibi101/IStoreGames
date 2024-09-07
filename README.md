@@ -23,7 +23,8 @@ Once in the app youll get straight to the main use of it. finding your game scre
 currently i play league roblox and poe so ive chosen screenshots from these 3 games.
 ![image](https://github.com/user-attachments/assets/0f7e47a0-dce4-4b4d-a3c0-27121d36a910)
 Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently working on options to delete and add photos on the app itself instead of using the codebase :). 
-![image](https://github.com/user-attachments/assets/224fb2e4-a736-49c9-bc6b-83b41d29e10e)
+![image](https://github.com/user-attachments/assets/1c1a7172-d6c1-4c79-abd6-2316e55b2462)
+
 
 
 ## Languages and Technologies Used
