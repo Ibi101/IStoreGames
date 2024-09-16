@@ -13,7 +13,8 @@ Currently a work in progress, i have a ton of ambitions for this app and alot mo
 
 ##  🔐 Getting Started
 getting started you will be greeted with a basic login page. i plan to make a database for each user to store their photos, but for now its just in files within the code-sapce so the login feature really isnt necessary.
-![image](https://github.com/user-attachments/assets/e8639b08-12e8-4ba4-884a-da801086ba9b)
+![image](https://github.com/user-attachments/assets/d7304c9a-707e-483e-95e0-2af1eae26ac1)
+
 
 I plan to add Forogtten password and sign up options to and maybe a little animation on the page.   
 
@@ -21,9 +22,12 @@ I plan to add Forogtten password and sign up options to and maybe a little anima
 ### 🎮 The app
 Once in the app youll get straight to the main use of it. finding your game screenshots. as you can see its quite basic right now, but as i work on it ill be adding multiple pages, and options for you to add your own games.
 currently i play league roblox and poe so ive chosen screenshots from these 3 games.
-![image](https://github.com/user-attachments/assets/0f7e47a0-dce4-4b4d-a3c0-27121d36a910)
+![image](https://github.com/user-attachments/assets/40d57026-9d0d-4f96-976c-743d2ab08cc5)
+
+
 Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently working on options to delete and add photos on the app itself instead of using the codebase :). 
-![image](https://github.com/user-attachments/assets/224fb2e4-a736-49c9-bc6b-83b41d29e10e)
+![image](https://github.com/user-attachments/assets/1c1a7172-d6c1-4c79-abd6-2316e55b2462)
+
 
 
 ## Languages and Technologies Used
