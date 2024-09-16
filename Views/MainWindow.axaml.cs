@@ -24,24 +24,15 @@ namespace AvaloniaLib1.Views
             }
             else
             {
-                // Ensure the image path is correct and the file exists
-                // Ensure the path is correct relative to the output directory
-                string imagePath = "Assets/X.png";
-
-                var image = new Image
-                {
-                    Width = 100,  // Set the desired width
-                    Height = 100, // Set the desired height
-                    Source = new Bitmap(imagePath),  // Use the relative path
-                    Stretch = Avalonia.Media.Stretch.Uniform
-                };
+                
+                
 
                 var messageBox = new Window
                 {
                     Title = "Login Error",
-                    Content = image, // Set the image as the content
-                    Width = 350,
-                    Height = 200,
+                    Content = "Invalid UserName or Password",
+                    Width = 220,
+                    Height = 150,
                     WindowStartupLocation = WindowStartupLocation.CenterScreen
                 };
 
