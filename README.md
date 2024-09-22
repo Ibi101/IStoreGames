@@ -28,6 +28,11 @@ currently i play league roblox and poe so ive chosen screenshots from these 3 ga
 Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently working on options to delete and add photos on the app itself instead of using the codebase :). 
 ![image](https://github.com/user-attachments/assets/1c1a7172-d6c1-4c79-abd6-2316e55b2462)
 
+To add an image you simply press the plus logo on the right side.
+This opens up the file explorer allowing you to add an image downloaded on your pc.
+![image](https://github.com/user-attachments/assets/c1d43a57-67d3-4a43-9df2-13ff7f58824b)
+
+
 
 
 ## Languages and Technologies Used
