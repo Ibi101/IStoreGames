@@ -10,8 +10,9 @@
         ExtendClientAreaToDecorationsHint="True"
         ExtendClientAreaChromeHints="NoChrome"
         ExtendClientAreaTitleBarHeightHint="-1"
-        >
-
+   >
+ 
+  
     
     
     <Design.DataContext>
@@ -21,7 +22,7 @@
     </Design.DataContext>
     
     <Grid ShowGridLines="False">
-           
+        
         <Grid.Background>
             <ImageBrush Source="/Assets/backround.jpg"
                         Stretch="UniformToFill" />
@@ -43,12 +44,10 @@
         
       
         
-   
-        
         
         
         <Border Grid.Column="1" Height="500" Width="250"  CornerRadius="10" ClipToBounds="True">
-            <Panel  Background="White"  >
+            <Panel  Background="White" Name="LoginPanel" >
                 <Label Content="Welcome back" Foreground="Purple" FontWeight="Medium" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center"/>
                 
                  <Label Content="Username" FontSize="9" Foreground="DarkGray" Margin="23,118,0,0"/>
@@ -74,7 +73,7 @@
                   
                 </Button>
                  
-                 
+                <Button Name="file" Click="OpenFileButton_Click"/>
             </Panel>
         </Border>
         

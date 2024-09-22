@@ -2,8 +2,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Icon="/Assets/avalonia-logo.ico"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:animations="clr-namespace:Avalonia.Animation;assembly=Avalonia.Animation"
+        mc:Ignorable="d"
         x:Class="AvaloniaLib1.Dashboard"
         Title="Dashboard"
         Background="Transparent"
@@ -11,7 +11,10 @@
         ExtendClientAreaToDecorationsHint="True"
         ExtendClientAreaChromeHints="NoChrome"
         ExtendClientAreaTitleBarHeightHint="-1">
+ 
     <Grid>
+
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -21,6 +24,16 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="90*"/>
         </Grid.RowDefinitions>
+        
+        <Button 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Width="50" Height="35"
+            Grid.Column="0"
+            Background="Transparent"
+            Click="AddImageButton">
+            <Image Source="../Assets/black-plus-icon-11.png" Height="30"/>
+        </Button>
         
         <Button Name="CloseButton" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right"
                 Background="Transparent"
@@ -113,7 +126,8 @@
                       Width="250"
                       Grid.Row="1" Grid.Column="1">
           <StackPanel>
-    <Button Background="Transparent" Tag="Poe1" Click="PoeButtononClick">
+        
+              <Button Background="Transparent" Tag="Poe1" Click="PoeButtononClick">
         <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe1.png" Width="200" Height="150" Margin="5"/>
     </Button>
     <Button Background="Transparent" Tag="Poe2" Click="PoeButtononClick">
