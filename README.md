@@ -13,6 +13,7 @@ Currently a work in progress, i have a ton of ambitions for this app and alot mo
 
 ##  🔐 Getting Started
 getting started you will be greeted with a basic login page.Each user will have their own database which stores the photos available to that user.
+
 ![image](https://github.com/user-attachments/assets/d7304c9a-707e-483e-95e0-2af1eae26ac1)
 
 I plan to add Forogtten password to allow users to change passwords multiple times
