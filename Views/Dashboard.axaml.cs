@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using Avalonia;
 using System;
 using Avalonia.Animation;
+using Avalonia.Layout;
+using Avalonia.Media;
+using Avalonia.Media.Imaging;
 
 namespace AvaloniaLib1
 {
@@ -102,25 +105,87 @@ namespace AvaloniaLib1
             }
         }
 
+        private void LargeImageWindow(Bitmap bitmap)
+        {
+            var LargeImageWindow = new Window
+            {
+                Height = 600,
+                Width = 400,
+                Background = Brushes.Transparent,
+                WindowStartupLocation = WindowStartupLocation.CenterScreen,
+                ExtendClientAreaToDecorationsHint = true,
+                ExtendClientAreaTitleBarHeightHint = 0,
+            };
+            var grid = new Grid();
+            var closeButton = new Button
+            {
+                Width = 40,
+                Height = 40,
+                Content = new Image
+                {
+                    Source = new Bitmap("Assets/X.png"), 
+                    Stretch = Stretch.Uniform,
+                },
+                Background = Brushes.Transparent,
+                BorderBrush = Brushes.Transparent,
+                HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Top,
+                Margin = new Thickness(0, 0, 10, 10)
+            };
+            closeButton.Click += (s, e) => LargeImageWindow.Close();
+                
+            grid.Children.Add(closeButton); 
+            grid.Children.Add(new Image
+            {
+                Source = bitmap, Stretch = Avalonia.Media.Stretch.Uniform,
+           
+            });
+
+      
+            LargeImageWindow.Content = grid;
+
+            LargeImageWindow.Show(); 
+
+
+        }
+
         private async void AddImageButton(object? sender, RoutedEventArgs e)
         {
-            // Get top level from the current control. Alternatively, you can use Window reference instead.
+   
             var topLevel = TopLevel.GetTopLevel(this);
-
-            // Start async operation to open the dialog.
+            
             var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
             {
                 Title = "File Explorer",
-                AllowMultiple = false
+                AllowMultiple = true
             });
 
-            if (files.Count >= 1)
+            foreach (var file in files)
             {
-                // Open reading stream from the first file.
-                await using var stream = await files[0].OpenReadAsync();
-                using var streamReader = new StreamReader(stream);
-                // Reads all the content of file as a text.
-                var fileContent = await streamReader.ReadToEndAsync();
+                await using var stream = await file.OpenReadAsync();
+                var bitmap = new Bitmap(stream);
+
+                var button = new Button
+                {   Width = 200,
+                    Height=150,
+                    Content = new Image
+
+                    
+                {
+                    
+                    Source = bitmap,
+                    Width = 200,
+                    Height=150
+                    
+                }
+                    
+                 
+                };
+
+                button.Click += (s, args) => LargeImageWindow(bitmap);
+                LeaguePanel.Children.Insert(0,button);
+
+
+
             }
         }
     }

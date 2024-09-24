@@ -79,7 +79,7 @@
                       Width="250"
                       Grid.Row="1"
                       Grid.Column="0">
-            <StackPanel>
+            <StackPanel Name="LeaguePanel">
                 <Button Background="Transparent" Tag="League1" Click="LeagueButtonClick" >
                     <Image Source="avares://AvaloniaLib1/Assets/League/League1.png" Width="200" Height="150" Margin="5"/>
                 </Button>
@@ -125,7 +125,7 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="1">
-          <StackPanel>
+          <StackPanel Name="PoePanel">
         
               <Button Background="Transparent" Tag="Poe1" Click="PoeButtononClick">
         <Image Source="avares://AvaloniaLib1/Assets/Poe/Poe1.png" Width="200" Height="150" Margin="5"/>
@@ -163,7 +163,7 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="2">
-          <StackPanel>
+          <StackPanel Name="RobloxPanel">
     <Button Background="Transparent" Tag="Roblox1" Click="RobloxButtonClick">
         <Image Source="../Assets/Roblox/Roblox1.png" Width="200" Height="150" Margin="5"/>
     </Button>
