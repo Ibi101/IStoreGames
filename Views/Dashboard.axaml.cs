@@ -57,7 +57,8 @@ namespace AvaloniaLib1
         public Dashboard()
         {
             InitializeComponent();
-        
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
         }
 
 
@@ -150,7 +151,57 @@ namespace AvaloniaLib1
 
         private async void AddImageButton(object? sender, RoutedEventArgs e)
         {
+            var Optionwindow = new Window
+            {
+                WindowStartupLocation = WindowStartupLocation.CenterScreen,
+                Width = 250,
+                Height = 250,
+                Content= new StackPanel
+                {
+                    Orientation = Orientation.Horizontal,
+                    HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
+                    VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
+                    Children=
+                    {
+                        new Button
+                        {
+                            Content="Leauge",
+                            VerticalAlignment = VerticalAlignment.Center,
+
+                            Width=83,
+                            Height=83,
+                        },
+                        new Button
+                        {
+                            Content="poe",
+                            VerticalAlignment = VerticalAlignment.Center,
+
+                            Width=83,
+                            Height=83,
+                        } ,
+                        new Button
+                        {
+                            Content="Roblox",
+                            VerticalAlignment = VerticalAlignment.Center,
+
+                            Width=83,
+                            Height=83,
+                        }
+                        
+                        
+                     
+                    }
+                    
+                    
+                }
+                
+            
+                    
+                    
+
+            };
    
+      
             var topLevel = TopLevel.GetTopLevel(this);
             
             var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
@@ -158,6 +209,7 @@ namespace AvaloniaLib1
                 Title = "File Explorer",
                 AllowMultiple = true
             });
+            Optionwindow.Show();
 
             foreach (var file in files)
             {
@@ -176,11 +228,16 @@ namespace AvaloniaLib1
                     Width = 200,
                     Height=150
                     
+                    
                 }
+                    
+                    
+                    
                     
                  
                 };
-
+         
+         
                 button.Click += (s, args) => LargeImageWindow(bitmap);
                 LeaguePanel.Children.Insert(0,button);
 
