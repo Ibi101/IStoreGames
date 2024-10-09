@@ -34,6 +34,12 @@ This opens up the file explorer allowing you to add an image downloaded on your 
 ![image](https://github.com/user-attachments/assets/c1d43a57-67d3-4a43-9df2-13ff7f58824b)
 
 
+Once selected what image youd like to add, choose a category to add it to, in this case id like to add it to the league of legends screenshot etc.
+
+![image](https://github.com/user-attachments/assets/28272105-18f3-4678-89ff-46263b5d4c95)
+
+
+
 
 
 ## Languages and Technologies Used
