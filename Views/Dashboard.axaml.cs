@@ -151,99 +151,46 @@ namespace AvaloniaLib1
 
         private async void AddImageButton(object? sender, RoutedEventArgs e)
         {
-            var Optionwindow = new Window
-            {
-                WindowStartupLocation = WindowStartupLocation.CenterScreen,
-                Width = 250,
-                Height = 250,
-                Content= new StackPanel
-                {
-                    Orientation = Orientation.Horizontal,
-                    HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
-                    VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center,
-                    Children=
-                    {
-                        new Button
-                        {
-                            Content="Leauge",
-                            VerticalAlignment = VerticalAlignment.Center,
-
-                            Width=83,
-                            Height=83,
-                        },
-                        new Button
-                        {
-                            Content="poe",
-                            VerticalAlignment = VerticalAlignment.Center,
-
-                            Width=83,
-                            Height=83,
-                        } ,
-                        new Button
-                        {
-                            Content="Roblox",
-                            VerticalAlignment = VerticalAlignment.Center,
-
-                            Width=83,
-                            Height=83,
-                        }
-                        
-                        
-                     
-                    }
-                    
-                    
-                }
-                
-            
-                    
-                    
-
-            };
-   
-      
             var topLevel = TopLevel.GetTopLevel(this);
-            
+
             var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
             {
                 Title = "File Explorer",
                 AllowMultiple = true
             });
-            Optionwindow.Show();
 
             foreach (var file in files)
             {
                 await using var stream = await file.OpenReadAsync();
                 var bitmap = new Bitmap(stream);
 
-                var button = new Button
-                {   Width = 200,
-                    Height=150,
-                    Content = new Image
-
-                    
+                // Get the selected panel from the ComboBox
+                var selectedPanel = PanelSelect.SelectedItem as ComboBoxItem;
+                if (selectedPanel != null)
                 {
-                    
-                    Source = bitmap,
-                    Width = 200,
-                    Height=150
-                    
-                    
+                    var panelName = selectedPanel.Content.ToString();
+                    var panel = this.FindControl<Panel>(panelName);
+                    if (panel != null)
+                    {
+                        // Create a new button instance for the selected panel
+                        var newButton = new Button
+                        {
+                            Width = 200,
+                            Height = 150,
+                            Content = new Image
+                            {
+                                Source = bitmap,
+                                Width = 200,
+                                Height = 150
+                            }
+                        };
+
+                        newButton.Click += (s, args) => LargeImageWindow(bitmap);
+                        panel.Children.Insert(0, newButton);
+                    }
                 }
-                    
-                    
-                    
-                    
-                 
-                };
-         
-         
-                button.Click += (s, args) => LargeImageWindow(bitmap);
-                LeaguePanel.Children.Insert(0,button);
-
-
-
             }
         }
+
     }
 }

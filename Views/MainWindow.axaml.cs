@@ -28,7 +28,7 @@ namespace AvaloniaLib1.Views
 
         private void LogInButton_OnClick(object? sender, RoutedEventArgs e)
         {
-            if (LogInTextBox.Text == "Greya" && PassowordTextBox.Text == "2005")
+            if (LogInTextBox.Text == "greya" && PassowordTextBox.Text == "2005")
             {
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
