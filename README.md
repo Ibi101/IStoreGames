@@ -6,6 +6,7 @@
 
 
 A photo storing app developed using the avalonia framework, using axaml as the front end and c# as the back end.
+
 I made this app because i was tired of losing my screenshots in games, so i decided to make something that would categorize my games in sections that i can easily check!
 Currently a work in progress, i have a ton of ambitions for this app and alot more features to introduce!
 
@@ -16,7 +17,7 @@ getting started you will be greeted with a basic login page.Each user will have 
 
 ![image](https://github.com/user-attachments/assets/d7304c9a-707e-483e-95e0-2af1eae26ac1)
 
-I plan to add Forogtten password to allow users to change passwords multiple times
+I plan to add Forogtten password to allow me to change passwords multiple times
 
 
 ### 🎮 The app
@@ -25,12 +26,18 @@ currently i play league roblox and poe so ive chosen screenshots from these 3 ga
 ![image](https://github.com/user-attachments/assets/40d57026-9d0d-4f96-976c-743d2ab08cc5)
 
 
-Clicking on any image will ofcourse  will zoom in for a clear viewer. Currently working on options to delete and add photos on the app itself instead of using the codebase :). 
+Clicking on any image will ofcourse  will zoom in for a clear viewer. Optitimisng an option to allow rotates. 
 ![image](https://github.com/user-attachments/assets/1c1a7172-d6c1-4c79-abd6-2316e55b2462)
 
 To add an image you simply press the plus logo on the right side.
 This opens up the file explorer allowing you to add an image downloaded on your pc.
 ![image](https://github.com/user-attachments/assets/c1d43a57-67d3-4a43-9df2-13ff7f58824b)
+
+
+Once selected what image youd like to add, choose a category to add it to, in this case id like to add it to the league of legends screenshot etc.
+
+![image](https://github.com/user-attachments/assets/28272105-18f3-4678-89ff-46263b5d4c95)
+
 
 
 
