@@ -2,7 +2,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:animations="clr-namespace:Avalonia.Animation;assembly=Avalonia.Animation"
         mc:Ignorable="d"
         x:Class="AvaloniaLib1.Dashboard"
         Title="Dashboard"
@@ -13,8 +12,7 @@
         ExtendClientAreaTitleBarHeightHint="-1">
  
     <Grid>
-
-        
+   
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -24,11 +22,12 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="90*"/>
         </Grid.RowDefinitions>
-        
-        <ComboBox Name="PanelSelect" Width="175" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,0,0,0">
+        <!-- Combo box to select what section to add photo to-->
+        <ComboBox Name="PanelSelect" Width="175" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,10,0,0"
+                  Background="Transparent">
             <ComboBoxItem Content="LeaguePanel"/> 
             <ComboBoxItem Content="PoePanel"/>
-                
+            <ComboBoxItem Content = "RobloxPanel"/>
         </ComboBox>
     
         <Button 
@@ -36,6 +35,8 @@
             HorizontalAlignment="Left"
             Width="50" Height="35"
             Grid.Column="0"
+            Grid.Row="0"
+            Margin="0,10,0,0"
             Background="Transparent"
             Click="AddImageButton">
             <Image Source="../Assets/black-plus-icon-11.png" Height="30"/>
@@ -67,7 +68,9 @@
         
         
          
-        <Label Grid.Row="0" Content="League Screenshots"
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Content="League Screenshots"
                VerticalAlignment="Bottom" HorizontalAlignment="Center"
                FontSize="18" FontWeight="Bold" Foreground="White"/>
         
@@ -81,6 +84,8 @@
                FontSize="18" FontWeight="Bold" Foreground="White"
                Grid.Row="0" Grid.Column="2"/>
         
+        
+        <!-- League Section -->
         <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" 
                       Width="250"
                       Grid.Row="1"
@@ -127,7 +132,7 @@
                 </Button>
             </StackPanel>
         </ScrollViewer>
-        
+        <!--  Poe section -->
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="1">
@@ -165,12 +170,12 @@
     </Button>
 </StackPanel>
         </ScrollViewer>
-        
+        <!-- Roblox section -->
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
                       Width="250"
                       Grid.Row="1" Grid.Column="2">
           <StackPanel Name="RobloxPanel">
-    <Button Background="Transparent" Tag="Roblox1" Click="RobloxButtonClick">
+              <Button Background="Transparent" Tag="Roblox1" Click="RobloxButtonClick">
         <Image Source="../Assets/Roblox/Roblox1.png" Width="200" Height="150" Margin="5"/>
     </Button>
     <Button Background="Transparent" Tag="Roblox2" Click="RobloxButtonClick">
@@ -186,9 +191,29 @@
         <Image Source="../Assets/Roblox/Roblox5.png" Width="200" Height="150" Margin="5"/>
     </Button>
 </StackPanel>
+            
+        
         </ScrollViewer>
         
      
+        <Button Name="NextPagebutton"
+                Click="NextPagebutton_OnClick"
+            Grid.Column="2"
+            Grid.Row="1"
+            Background="Transparent"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Width="120"
+            Height="350"
+            >
+            <Image
+               Source="../Assets/DoubleRight.png"
+               Stretch="Fill"
+                />
+            
+        </Button>
+        
+        
         
     </Grid>
     

@@ -12,6 +12,7 @@ using Avalonia.Animation;
 using Avalonia.Layout;
 using Avalonia.Media;
 using Avalonia.Media.Imaging;
+using AvaloniaLib1.Views;
 
 namespace AvaloniaLib1
 {
@@ -151,6 +152,8 @@ namespace AvaloniaLib1
 
         private async void AddImageButton(object? sender, RoutedEventArgs e)
         {
+            
+            //File mechanism to select an image from file explorer
             var topLevel = TopLevel.GetTopLevel(this);
 
             var files = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
@@ -164,6 +167,9 @@ namespace AvaloniaLib1
                 await using var stream = await file.OpenReadAsync();
                 var bitmap = new Bitmap(stream);
 
+                
+                
+                
                 // Get the selected panel from the ComboBox
                 var selectedPanel = PanelSelect.SelectedItem as ComboBoxItem;
                 if (selectedPanel != null)
@@ -189,8 +195,18 @@ namespace AvaloniaLib1
                         panel.Children.Insert(0, newButton);
                     }
                 }
+                else if (selectedPanel == null)
+                {
+                    Console.WriteLine("Error");
+                }
             }
         }
 
+        private void NextPagebutton_OnClick(object? sender, RoutedEventArgs e)
+        {
+            Dashboard2 dashboard2 = new Dashboard2();
+            dashboard2.Show();
+            this.Close();
+        }
     }
 }

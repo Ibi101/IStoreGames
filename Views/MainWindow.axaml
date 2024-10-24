@@ -73,7 +73,6 @@
                   
                 </Button>
                  
-                <Button Name="file" Click="OpenFileButton_Click"/>
             </Panel>
         </Border>
         
