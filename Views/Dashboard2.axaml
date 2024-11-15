@@ -4,6 +4,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaLib1.Views.Dashboard2"
-        Title="Dashboard2">
-    Welcome to Avalonia!
+        Title="Dashboard2"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1">
+        
+        
+        <Grid ShowGridLines="True">
+         <Grid.ColumnDefinitions>
+             
+             <ColumnDefinition/>
+             <ColumnDefinition/>
+             <ColumnDefinition/>
+         </Grid.ColumnDefinitions> 
+            
+        <Grid.RowDefinitions>
+          <RowDefinition Height="10*"/>
+          <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+                
+                
+                
+        </Grid>
+
 </Window>

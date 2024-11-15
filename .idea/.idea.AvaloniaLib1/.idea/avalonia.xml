@@ -10,6 +10,7 @@
         <entry key="ImageDisplayWindow.axaml" value="AvaloniaLib1.csproj" />
         <entry key="UserControl.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Views/Dashboard.axaml" value="AvaloniaLib1.csproj" />
+        <entry key="Views/Dashboard2.axaml" value="AvaloniaLib1.csproj" />
         <entry key="Views/MainWindow.axaml" value="AvaloniaLib1.csproj" />
         <entry key="ZoomWindow..axaml" value="AvaloniaLib1.csproj" />
       </map>
