@@ -197,7 +197,23 @@ namespace AvaloniaLib1
                 }
                 else if (selectedPanel == null)
                 {
-                    Console.WriteLine("Error");
+                    var errorbox = new Window()
+                    {
+                      Content = new TextBlock()
+                      {
+                          Text="Please select a title",
+                          Foreground = Brushes.DarkRed,
+                          FontSize=20,
+                          TextAlignment = TextAlignment.Center,
+                          
+                      },
+                     WindowStartupLocation = WindowStartupLocation.CenterScreen,
+                      Height= 150,
+                      Width= 230,
+                        
+                    
+                    };
+                    errorbox.Show();
                 }
             }
         }
